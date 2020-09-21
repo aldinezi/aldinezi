@@ -10,15 +10,7 @@
 <br/>
 <br/>
 
-Hi, I'm Aldin Nezirić, a Front End Developer 🚀 from Bosnia and Herzegovina, currently, I'm a Frontend Lead Developer at 👨‍💼️  [@superthread](https://superthread.com). I'm a creative problem solving enthusiast, with a constantly growing love for languages. Beside programming, I enjoy life oudoors. :camping: :national_park:
-
-  <img align="right" alt="GIF" src="https://64.media.tumblr.com/4cb8405792fcb9944a5eade794f3ffec/tumblr_nq8sqsmGjC1rfd7lko1_500.gifv" />
-
-**Talking about Personal Stuffs:**
-
-- :man_technologist: I’m currently working on something awesome, soon to be revealed;
-- 🌱 I’m currently learning Go;
-- 💬 Ask me about anything, I am happy to help;
+Hi, I'm Aldin Nezirić, a Front End Developer 🚀 from Bosnia and Herzegovina, currently, I'm a Frontend Lead Developer at 👨‍💼️  [@superthread](https://superthread.com).
 
 **Languages and Tools:**  
 
