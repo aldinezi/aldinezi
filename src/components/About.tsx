@@ -2,14 +2,16 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section className="mb-8">
-      <h2 className="section-title">About</h2>
-      
+    <section id="summary" className="mb-8">
+      <h2 className="section-title">About me</h2>
       <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-        Senior Frontend Engineer with 10+ years of experience designing and scaling high-performance web apps.
-        Specialized in Vue.js (2 & 3), Nuxt 3, and TypeScript, with a strong background in building reusable systems,
-        architecting SSR-first applications, and leading agile frontend teams. Passionate about clean code,
-        accessibility, and mentoring engineers to grow.
+        I'm a <strong>Senior Frontend Engineer and Tech Lead</strong> with over 8 years of experience designing and building performant, maintainable web applications. I specialize in modern JavaScript frameworks like <strong>Vue 3</strong>, <strong>Nuxt 3</strong>, and <strong>TypeScript</strong>, and I’ve also worked with <strong>React</strong> in cross-functional environments.
+      </p>
+      <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+        At <strong>Superthread</strong>, I lead a team of 10 engineers, guiding architectural decisions, mentoring developers, and driving product improvements with a strong focus on UX, accessibility, and performance. I’ve overseen major projects like migrating large-scale applications from Vue 2 to Vue 3 and implementing SSR for speed and SEO gains.
+      </p>
+      <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+        Passionate about developer experience and continuous learning, I’m currently expanding into <strong>AI-enhanced interfaces</strong> and exploring how <strong>machine learning</strong> can reshape frontend tooling and interaction design.
       </p>
     </section>
   );
