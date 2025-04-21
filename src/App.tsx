@@ -4,7 +4,7 @@ import CV from './components/CV';
 import { Sun, Moon } from 'lucide-react';
 
 function App() {
-  const [darkMode, setDarkMode] = React.useState(true);
+  const [darkMode, setDarkMode] = React.useState(false);
 
   useEffect(() => {
     if (darkMode) {
