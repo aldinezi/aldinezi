@@ -22,7 +22,8 @@ const Experience: React.FC = () => {
         'Developed collaborative text editing using Tiptap + Codox',
         'Improved SEO and performance with structured data, Cloudflare caching, and lazy hydration',
         'Integrated CI/CD pipelines (GitHub Actions), observability (Sentry, SonarCloud, DebugBear)',
-        'Managed OAuth (Slack), i18n, role-based access, and advanced deployment flows'
+        'Managed OAuth (Slack), i18n, role-based access, and advanced deployment flows',
+        'Worked on GoLang backend for multiple microservices',
       ]
     },
     {
@@ -74,10 +75,10 @@ const Experience: React.FC = () => {
   return (
     <section className="mb-8">
       <h2 className="section-title">Experience</h2>
-      
+
       <div className="space-y-8">
         {jobs.map((job, index) => (
-          <article key={index} className="group">
+          <article key={index + job.title} className="group">
             <div className="flex flex-col sm:flex-row justify-between mb-2">
               <h3 className="job-title">
                 {job.title} {job.company && `— ${job.company}`}
@@ -88,14 +89,14 @@ const Experience: React.FC = () => {
                 </span>
               )}
             </div>
-            
+
             {job.location && (
               <div className="job-location">{job.location}</div>
             )}
-            
+
             <ul className="job-description">
               {job.responsibilities.map((responsibility, i) => (
-                <li key={i} className="leading-relaxed">{responsibility}</li>
+                <li key={i + responsibility} className="leading-relaxed">{responsibility}</li>
               ))}
             </ul>
           </article>
