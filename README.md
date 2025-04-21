@@ -7,7 +7,7 @@
 <br/>
 <br/>
 
-Hi, I'm **Aldin Nezirić**, a passionate **Senior Frontend Engineer & Team Lead** from Bosnia and Herzegovina 🇧🇦.  
+Hi, I'm **Aldin Nezirić**, a passionate **Senior Frontend Engineer & Team Lead** from Bosnia and Herzegovina 🇧🇦.
 Currently leading frontend at [**Superthread**](https://superthread.com) — where we're building the future of async collaboration.
 
 With over **10 years of experience**, I specialize in creating fast, scalable, and elegant web applications using modern frontend stacks like **Vue 3**, **Nuxt 3**, **TypeScript**, and **React**. I'm deeply focused on **accessibility**, **developer experience**, and **building systems that scale** — both in code and in teams.
@@ -16,22 +16,22 @@ With over **10 years of experience**, I specialize in creating fast, scalable, a
 
 ### 💼 Current Role
 
-**Frontend Lead** @ [Superthread](https://superthread.com)  
-🔧 Vue 3 · Nuxt 3 · TypeScript · Tiptap · SSR · CI/CD · AWS Amplify · Cloudflare Workers  
+**Frontend Lead** @ [Superthread](https://superthread.com)
+🔧 Vue 3 · Nuxt 3 · TypeScript · Tiptap · SSR · CI/CD · AWS Amplify · Cloudflare Workers
 👥 Leading a team of 10 engineers | Building component libraries | Mentoring developers
 
 ---
 
 ### ⚡ Tech Stack
 
-**Languages & Frameworks**  
+**Languages & Frameworks**
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/javascript/javascript.png"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/typescript/typescript.png"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/vue/vue.png"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/nuxt/nuxt.png"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/react/react.png"></code>
 
-**DevOps & Tools**  
+**DevOps & Tools**
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/github/github.png"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/aws/aws.png"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/netlify/netlify.png"></code>
@@ -55,7 +55,7 @@ With over **10 years of experience**, I specialize in creating fast, scalable, a
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/aldinneziric/)
 - 💬 [GitHub Discussions](https://github.com/aldinezi)
-- ✉️ [aldin.neziric@outlook.com](mailto:aldin.neziric@outlook.com)
+- ✉️ [aldinezi@gmail.com](mailto:aldinezi@gmail.com)
 
 ---
 
