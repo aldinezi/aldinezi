@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code2, Palette, Terminal, Globe, PenTool as Tool, Users } from 'lucide-react';
+import { Code2, Terminal, Globe, PenTool as Tool } from 'lucide-react';
 
 interface SkillCategory {
   title: string;
@@ -12,7 +12,7 @@ const Skills: React.FC = () => {
     {
       title: 'Languages & Frameworks',
       icon: <Code2 className="w-5 h-5 text-blue-500" />,
-      skills: ['Vue.js (2 & 3)', 'Nuxt 3', 'React', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Sass']
+      skills: ['Vue.js (2 & 3)', 'Nuxt 3', 'Node' , 'React', 'TypeScript', 'GoLang', 'JavaScript', 'HTML5', 'CSS3', 'Sass']
     },
     {
       title: 'Tooling',
@@ -34,10 +34,10 @@ const Skills: React.FC = () => {
   return (
     <section className="mb-8">
       <h2 className="section-title">Skills</h2>
-      
+
       <div className="space-y-8">
-        {skillCategories.map((category, index) => (
-          <div key={index} className="group">
+        {skillCategories.map((category) => (
+          <div key={category.title} className="group">
             <div className="flex items-center gap-2 mb-3">
               {category.icon}
               <h3 className="text-lg font-medium text-blue-600 dark:text-blue-400">
@@ -45,8 +45,8 @@ const Skills: React.FC = () => {
               </h3>
             </div>
             <div className="flex flex-wrap gap-2">
-              {category.skills.map((skill, i) => (
-                <span key={i} className="skill-tag">
+              {category.skills.map((skill) => (
+                <span key={skill} className="skill-tag">
                   {skill}
                 </span>
               ))}
