@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mail, Phone, Github as GitHub, Linkedin, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
+import profileImage from '../profile.jpeg';
 
 const Header: React.FC = () => {
   return (
@@ -11,16 +12,23 @@ const Header: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 dark:text-white">
-            Aldin Nezirić
-          </h1>
-          <h2 className="text-xl sm:text-2xl text-blue-600 dark:text-blue-300 font-medium mt-1">
-            Senior Frontend Engineer | Team Lead
-          </h2>
-          <div className="flex items-center mt-2 text-gray-600 dark:text-gray-300">
-            <MapPin size={16} className="mr-1" />
-            <span>Jablanica, Bosnia and Herzegovina</span>
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
+          <img
+            src={profileImage}
+            alt="Aldin Nezirić"
+            className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover border-4 border-white dark:border-gray-700 shadow-lg"
+          />
+          <div>
+            <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 dark:text-white">
+              Aldin Nezirić
+            </h1>
+            <h2 className="text-xl sm:text-2xl text-blue-600 dark:text-blue-300 font-medium mt-1">
+              Senior Frontend Engineer | Team Lead
+            </h2>
+            <div className="flex items-center mt-2 text-gray-600 dark:text-gray-300">
+              <MapPin size={16} className="mr-1" />
+              <span>Jablanica, Bosnia and Herzegovina</span>
+            </div>
           </div>
         </div>
 
