@@ -1,5 +1,5 @@
-import React from 'react';
-import { Code2, Terminal, Globe, PenTool as Tool } from 'lucide-react';
+import React, { useState } from 'react';
+import { Code2, Terminal, Globe, PenTool as Tool, ChevronDown } from 'lucide-react';
 
 interface SkillCategory {
   title: string;
@@ -8,6 +8,15 @@ interface SkillCategory {
 }
 
 const Skills: React.FC = () => {
+  const [expandedCategories, setExpandedCategories] = useState<Record<string, boolean>>({});
+
+  const toggleCategory = (title: string) => {
+    setExpandedCategories(prev => ({
+      ...prev,
+      [title]: !prev[title]
+    }));
+  };
+
   const skillCategories: SkillCategory[] = [
     {
       title: 'Languages & Frameworks',
@@ -38,18 +47,34 @@ const Skills: React.FC = () => {
       <div className="space-y-8">
         {skillCategories.map((category) => (
           <div key={category.title} className="group">
-            <div className="flex items-center gap-2 mb-3">
-              {category.icon}
-              <h3 className="text-lg font-medium text-blue-600 dark:text-blue-400">
-                {category.title}
-              </h3>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {category.skills.map((skill) => (
-                <span key={skill} className="skill-tag">
-                  {skill}
-                </span>
-              ))}
+            <button
+              onClick={() => toggleCategory(category.title)}
+              className="w-full flex items-center justify-between gap-2 mb-3 md:mb-3 md:justify-start"
+            >
+              <div className="flex items-center gap-2">
+                {category.icon}
+                <h3 className="text-lg font-medium text-blue-600 dark:text-blue-400">
+                  {category.title}
+                </h3>
+              </div>
+              <ChevronDown
+                className={`w-5 h-5 text-gray-500 transition-transform duration-200 md:hidden ${
+                  expandedCategories[category.title] ? 'rotate-180' : ''
+                }`}
+              />
+            </button>
+            <div
+              className={`transition-all duration-200 ease-in-out md:block ${
+                expandedCategories[category.title] ? 'block' : 'hidden md:block'
+              }`}
+            >
+              <div className="flex flex-wrap gap-2">
+                {category.skills.map((skill) => (
+                  <span key={skill} className="skill-tag">
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         ))}
