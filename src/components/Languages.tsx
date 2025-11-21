@@ -12,9 +12,9 @@ const Languages: React.FC = () => {
   ];
 
   return (
-    <section className="mb-8">
+    <section className="mb-8 print:hidden">
       <h2 className="section-title">Languages</h2>
-      
+
       <div className="space-y-3">
         {languages.map((language, index) => (
           <div key={index} className="flex justify-between items-center">

@@ -41,7 +41,7 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <section className="mb-8">
+    <section className="mb-8 print:hidden">
       <h2 className="section-title">Skills</h2>
 
       <div className="space-y-8">

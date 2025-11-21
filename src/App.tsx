@@ -18,7 +18,7 @@ function App() {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
       <button
         onClick={() => setDarkMode(!darkMode)}
-        className="fixed top-4 right-4 p-2 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-shadow z-50"
+        className="fixed top-4 right-4 p-2 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-shadow z-50 print:hidden"
         aria-label="Toggle dark mode"
       >
         <AnimatePresence mode="wait" initial={false}>
