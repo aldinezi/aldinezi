@@ -12,7 +12,7 @@ const Languages: React.FC = () => {
   ];
 
   return (
-    <section className="mb-8 print:hidden">
+    <section className="mb-8">
       <h2 className="section-title">Languages</h2>
 
       <div className="space-y-3">

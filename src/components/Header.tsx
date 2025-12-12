@@ -5,7 +5,7 @@ import profileImage from '../profile.jpeg';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-gradient-to-r from-blue-100 to-blue-50 dark:from-blue-900 dark:to-blue-800 p-6 sm:p-8 relative overflow-hidden">
+    <header className="bg-gradient-to-r from-blue-100 to-blue-50 dark:from-blue-900 dark:to-blue-800 p-6 sm:p-8 relative overflow-hidden print:px-0 print:py-0">
       <motion.div
         className="flex flex-col md:flex-row print:flex-col justify-between md:items-center print:items-start print:justify-start print:gap-4 relative z-10"
         initial={{ opacity: 0, y: 20 }}

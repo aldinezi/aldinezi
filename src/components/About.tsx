@@ -3,7 +3,7 @@ import React from 'react';
 const About: React.FC = () => {
   const yearsOfExperience = new Date().getFullYear() - 2015;
   return (
-    <section id="summary" className="mb-8">
+    <section id="summary" className="mb-8 print:mb-4">
       <h2 className="section-title">About me</h2>
       <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
         I'm a <strong>Senior Frontend Engineer and Tech Lead</strong> with over {yearsOfExperience} years of experience designing and building performant, maintainable web applications. I specialize in modern JavaScript frameworks like <strong>Vue 3</strong>, <strong>Nuxt 3</strong>, and <strong>TypeScript</strong>, and I’ve also worked with <strong>React</strong> in cross-functional environments.

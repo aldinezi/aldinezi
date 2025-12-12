@@ -4,7 +4,7 @@ import Languages from './Languages';
 
 const LeftColumn: React.FC = () => {
   return (
-    <div className="w-full lg:w-1/3 print:hidden bg-gray-50 dark:bg-gray-800/50 p-6 sm:p-8">
+    <div className="w-full lg:w-1/3 bg-gray-50 dark:bg-gray-800/50 p-6 sm:p-8 print:px-0 print:py-3">
       <Skills />
       <Languages />
     </div>
