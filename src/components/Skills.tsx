@@ -21,22 +21,22 @@ const Skills: React.FC = () => {
     {
       title: 'Languages & Frameworks',
       icon: <Code2 className="w-5 h-5 text-blue-500" />,
-      skills: ['Vue.js (2 & 3)', 'Nuxt 3', 'Node' , 'React', 'TypeScript', 'GoLang', 'JavaScript', 'HTML5', 'CSS3', 'Sass']
+      skills: ['Vue.js (2 & 3)', 'Nuxt 3', 'Node' , 'React', 'TypeScript', 'GoLang', 'JavaScript', 'HTML5', 'CSS3', 'Sass', 'Jest', 'Vitest']
     },
     {
       title: 'Tooling',
       icon: <Tool className="w-5 h-5 text-green-500" />,
-      skills: ['Vite', 'Webpack', 'Lerna', 'Vuex', 'Tiptap', 'GitHub Actions']
+      skills: ['Vite', 'Webpack', 'Lerna', 'Vuex', 'Tiptap', 'GitHub Actions', 'Cypress', 'Sentry', 'SonarCloud', 'DebugBear']
     },
     {
       title: 'Platforms',
       icon: <Globe className="w-5 h-5 text-purple-500" />,
-      skills: ['AWS Amplify', 'Netlify', 'Cloudflare Workers']
+      skills: ['AWS Amplify', 'Netlify', 'Cloudflare Workers', 'Cloudflare CDN', 'Cloudflare R2']
     },
     {
       title: 'Other',
       icon: <Terminal className="w-5 h-5 text-orange-500" />,
-      skills: ['Agile/Scrum', 'Code Reviews', 'Team Mentoring', 'Accessibility', 'SSR', 'CI/CD', 'OAuth', 'SEO']
+      skills: ['Agile/Scrum', 'Code Reviews', 'Team Mentoring', 'Accessibility', 'SSR', 'CI/CD', 'OAuth', 'SEO', 'i18n']
     }
   ];
 
