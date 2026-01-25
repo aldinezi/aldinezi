@@ -26,7 +26,7 @@ const Skills: React.FC = () => {
     {
       title: 'Tooling',
       icon: <Tool className="w-5 h-5 text-green-500" />,
-      skills: ['Vite', 'Webpack', 'Lerna', 'Vuex', 'Tiptap', 'GitHub Actions', 'Cypress', 'Sentry', 'SonarCloud', 'DebugBear']
+      skills: ['Vite', 'Webpack', 'Lerna', 'Vuex', 'Tiptap', 'Git', 'GitHub Actions', 'Cypress', 'Sentry', 'SonarCloud', 'DebugBear']
     },
     {
       title: 'Platforms',
