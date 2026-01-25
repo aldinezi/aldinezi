@@ -36,7 +36,7 @@ const Skills: React.FC = () => {
     {
       title: 'Other',
       icon: <Terminal className="w-5 h-5 text-orange-500" />,
-      skills: ['Agile/Scrum', 'Code Reviews', 'Team Mentoring', 'Accessibility', 'SSR', 'CI/CD', 'OAuth', 'SEO', 'i18n']
+      skills: ['Agile/Scrum', 'Code Reviews', 'Team Mentoring', 'Accessibility', 'SSR', 'CI/CD', 'OAuth', 'SEO', 'i18n', 'State management (Vuex, complex shared state, real-time sync)']
     }
   ];
 
