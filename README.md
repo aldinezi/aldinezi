@@ -8,7 +8,9 @@
 <br/>
 
 Hi, I'm **Aldin Nezirić**, a passionate **Senior Frontend Engineer & Team Lead** from Bosnia and Herzegovina 🇧🇦.
-Currently leading frontend at [**Superthread**](https://superthread.com) — where we're building the future of async collaboration.
+Currently working as a **Senior Frontend Software Engineer** via [**Zendev**](https://zendev.se) for **ICA Gruppen** — migrating legacy retail applications to a modern tech stack.
+
+Previously led frontend at [**Superthread**](https://superthread.com), where we built the future of async collaboration.
 
 With over **10 years of experience**, I specialize in creating fast, scalable, and elegant web applications using modern frontend stacks like **Vue 3**, **Nuxt 3**, **TypeScript**, and **React**. I'm deeply focused on **accessibility**, **developer experience**, and **building systems that scale** — both in code and in teams.
 
@@ -16,9 +18,9 @@ With over **10 years of experience**, I specialize in creating fast, scalable, a
 
 ### 💼 Current Role
 
-**Frontend Lead** @ [Superthread](https://superthread.com)
-🔧 Vue 3 · Nuxt 3 · TypeScript · Tiptap · SSR · CI/CD · AWS Amplify · Cloudflare Workers
-👥 Leading a team of 10 engineers | Building component libraries | Mentoring developers
+**Senior Frontend Software Engineer** @ [Zendev](https://zendev.se) / [ICA Gruppen](https://www.ica.se)
+🔧 React · TypeScript · OAuth2 · Oracle Cloud · Java microservices
+👥 Master Data Retail Team | Legacy app migrations | Search & filter components
 
 ---
 
