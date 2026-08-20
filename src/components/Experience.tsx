@@ -11,10 +11,22 @@ interface Job {
 const Experience: React.FC = () => {
   const jobs: Job[] = [
     {
+      title: 'Senior Frontend Software Engineer',
+      company: 'Zendev / ICA Gruppen',
+      location: 'Remote — Master Data Retail Team',
+      period: 'Jun 2026 – Present',
+      responsibilities: [
+        'Migrating core legacy applications to a modern tech stack',
+        'Designing and implementing store orderable item search and filter components',
+        'Setting up OAuth2 authentication flows integrated with Oracle Cloud',
+        'Collaborating across full-stack architecture with hands-on exposure to Java microservices'
+      ]
+    },
+    {
       title: 'Lead Frontend Engineer',
       company: 'Superthread',
       location: 'Remote / London, UK',
-      period: 'Sep 2020 – Present',
+      period: 'Sep 2020 – Jun 2026',
       responsibilities: [
         'Led a team of 10 engineers delivering a complex real-time collaboration platform, driving consistent improvements across performance, UX, and developer velocity',
         'Orchestrated the migration from Vue 2 to Vue 3 with Nuxt 3 SSR, improving client-side render times by ~55% and significantly enhancing perceived responsiveness',
