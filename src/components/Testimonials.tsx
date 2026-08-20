@@ -1,37 +1,39 @@
-import React from 'react';
-import { Quote } from 'lucide-react';
+import { Quote } from 'lucide-react'
+import type React from 'react'
 
 interface Testimonial {
-  quote: string;
-  author: string;
-  role: string;
-  company: string;
+  quote: string
+  author: string
+  role: string
+  company: string
 }
 
 const Testimonials: React.FC = () => {
   const testimonials: Testimonial[] = [
     {
-      quote: "Aldin's technical expertise and leadership skills have been instrumental in our team's success. His ability to mentor others while delivering high-quality code is exceptional.",
-      author: "Sarah Chen",
-      role: "Engineering Director",
-      company: "TechCorp"
+      quote:
+        "Aldin's technical expertise and leadership skills have been instrumental in our team's success. His ability to mentor others while delivering high-quality code is exceptional.",
+      author: 'Sarah Chen',
+      role: 'Engineering Director',
+      company: 'TechCorp',
     },
     {
-      quote: "Working with Aldin has been transformative for our frontend architecture. His deep knowledge of Vue.js and component design patterns elevated our entire development process.",
-      author: "Marcus Rodriguez",
-      role: "CTO",
-      company: "StartupHub"
-    }
-  ];
+      quote:
+        'Working with Aldin has been transformative for our frontend architecture. His deep knowledge of Vue.js and component design patterns elevated our entire development process.',
+      author: 'Marcus Rodriguez',
+      role: 'CTO',
+      company: 'StartupHub',
+    },
+  ]
 
   return (
     <section className="mb-8">
       <h2 className="section-title">What People Say</h2>
-      
+
       <div className="grid gap-6 md:grid-cols-2">
-        {testimonials.map((testimonial, index) => (
-          <div 
-            key={index}
+        {testimonials.map((testimonial) => (
+          <div
+            key={testimonial.author}
             className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-6 relative"
           >
             <Quote className="absolute top-4 right-4 w-8 h-8 text-blue-200 dark:text-blue-900" />
@@ -50,7 +52,7 @@ const Testimonials: React.FC = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Testimonials;
+export default Testimonials

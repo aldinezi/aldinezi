@@ -1,7 +1,7 @@
-import React from 'react';
-import About from './About';
-import Experience from './Experience';
-import Education from './Education';
+import type React from 'react'
+import About from './About'
+import Education from './Education'
+import Experience from './Experience'
 
 const RightColumn: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const RightColumn: React.FC = () => {
       <Experience />
       <Education />
     </div>
-  );
-};
+  )
+}
 
-export default RightColumn;
+export default RightColumn

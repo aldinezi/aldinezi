@@ -1,11 +1,11 @@
-import React from 'react';
+import type React from 'react'
 
 interface Job {
-  title: string;
-  company: string;
-  location: string;
-  period: string;
-  responsibilities: string[];
+  title: string
+  company: string
+  location: string
+  period: string
+  responsibilities: string[]
 }
 
 const Experience: React.FC = () => {
@@ -19,8 +19,8 @@ const Experience: React.FC = () => {
         'Migrating core legacy applications to a modern tech stack',
         'Designing and implementing store orderable item search and filter components',
         'Setting up OAuth2 authentication flows integrated with Oracle Cloud',
-        'Collaborating across full-stack architecture with hands-on exposure to Java microservices'
-      ]
+        'Collaborating across full-stack architecture with hands-on exposure to Java microservices',
+      ],
     },
     {
       title: 'Lead Frontend Engineer',
@@ -44,7 +44,7 @@ const Experience: React.FC = () => {
         'Owned major onboarding flow optimizations that increased hard-activated users by 60%, directly supporting growth and retention goals',
         'Managed OAuth, i18n, role-based access, and advanced deployment flows',
         'Worked on GoLang backend for multiple microservices',
-      ]
+      ],
     },
     {
       title: 'Frontend Developer',
@@ -55,8 +55,8 @@ const Experience: React.FC = () => {
         'Developed scalable SPAs using Vue.js, React, and AngularJS',
         'Built responsive UIs from Sketch/PSD, optimized for mobile and web',
         'Consumed RESTful APIs and handled complex component state logic',
-        'Mentored junior developers and introduced modern dev tooling'
-      ]
+        'Mentored junior developers and introduced modern dev tooling',
+      ],
     },
     {
       title: 'Web Developer',
@@ -65,8 +65,8 @@ const Experience: React.FC = () => {
       period: 'May 2016 – Sep 2017',
       responsibilities: [
         'Delivered Shopify, Magento, WordPress and ASP.NET websites',
-        'Ensured cross-browser compatibility and responsiveness'
-      ]
+        'Ensured cross-browser compatibility and responsiveness',
+      ],
     },
     {
       title: 'Freelance Developer',
@@ -75,8 +75,8 @@ const Experience: React.FC = () => {
       period: 'Jan 2015 – May 2016',
       responsibilities: [
         'Built 20+ websites with Joomla, WordPress, and pure HTML/CSS',
-        'Maintained 5.0 average client rating on Freelancer.com'
-      ]
+        'Maintained 5.0 average client rating on Freelancer.com',
+      ],
     },
     {
       title: 'Other Roles (Summary)',
@@ -87,43 +87,39 @@ const Experience: React.FC = () => {
         'Project Manager at Mountaineering Club "Plasa" – Led UNDP-funded sustainability projects',
         'Regional Youth Mentor at OIA – Organized civic education workshops across Bosnia',
         'President of Jablanica Youth Council – Initiated reconciliation events and youth policy drafts',
-        'Database Designer – Designed library system for local museum'
-      ]
-    }
-  ];
+        'Database Designer – Designed library system for local museum',
+      ],
+    },
+  ]
 
   return (
     <section className="mb-8">
       <h2 className="section-title">Experience</h2>
 
       <div className="space-y-8">
-        {jobs.map((job, index) => (
-          <article key={index + job.title} className="group">
+        {jobs.map((job) => (
+          <article key={job.title} className="group">
             <div className="flex flex-col sm:flex-row justify-between mb-2">
               <h3 className="job-title">
                 {job.title} {job.company && `— ${job.company}`}
               </h3>
-              {job.period && (
-                <span className="job-period">
-                  {job.period}
-                </span>
-              )}
+              {job.period && <span className="job-period">{job.period}</span>}
             </div>
 
-            {job.location && (
-              <div className="job-location">{job.location}</div>
-            )}
+            {job.location && <div className="job-location">{job.location}</div>}
 
             <ul className="job-description">
-              {job.responsibilities.map((responsibility, i) => (
-                <li key={i + responsibility} className="leading-relaxed">{responsibility}</li>
+              {job.responsibilities.map((responsibility) => (
+                <li key={responsibility} className="leading-relaxed">
+                  {responsibility}
+                </li>
               ))}
             </ul>
           </article>
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Experience;
+export default Experience

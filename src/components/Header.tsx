@@ -1,7 +1,7 @@
-import React from 'react';
-import { Mail, Phone, Github as GitHub, Linkedin, MapPin } from 'lucide-react';
-import { motion } from 'framer-motion';
-import profileImage from '../profile.jpeg';
+import { motion } from 'framer-motion'
+import { Code2, Globe, Mail, MapPin, Phone } from 'lucide-react'
+import type React from 'react'
+import profileImage from '../profile.jpeg'
 
 const Header: React.FC = () => {
   return (
@@ -47,7 +47,7 @@ const Header: React.FC = () => {
             rel="noopener noreferrer"
             className="contact-link print:whitespace-nowrap"
           >
-            <GitHub size={16} className="mr-2" />
+            <Code2 size={16} className="mr-2" />
             github.com/aldinezi
           </a>
           <a
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
             rel="noopener noreferrer"
             className="contact-link print:whitespace-nowrap"
           >
-            <Linkedin size={16} className="mr-2" />
+            <Globe size={16} className="mr-2" />
             linkedin.com/in/aldinneziric
           </a>
           <a
@@ -73,7 +73,7 @@ const Header: React.FC = () => {
 
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

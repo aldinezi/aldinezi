@@ -1,7 +1,7 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import Header from './Header';
-import MainContent from './MainContent';
+import { motion } from 'framer-motion'
+import type React from 'react'
+import Header from './Header'
+import MainContent from './MainContent'
 
 const CV: React.FC = () => {
   return (
@@ -19,7 +19,7 @@ const CV: React.FC = () => {
         &copy; {new Date().getFullYear()} Aldin Nezirić - All Rights Reserved
       </footer>
     </motion.div>
-  );
-};
+  )
+}
 
-export default CV;
+export default CV

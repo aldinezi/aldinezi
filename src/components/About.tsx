@@ -1,21 +1,30 @@
-import React from 'react';
+import type React from 'react'
 
 const About: React.FC = () => {
-  const yearsOfExperience = new Date().getFullYear() - 2015;
+  const yearsOfExperience = new Date().getFullYear() - 2015
   return (
     <section id="summary" className="mb-8 print:mb-4">
       <h2 className="section-title">About me</h2>
       <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-        I'm a <strong>Senior Frontend Engineer and Tech Lead</strong> with over {yearsOfExperience} years of experience designing and building performant, maintainable web applications. I specialize in modern JavaScript frameworks like <strong>Vue 3</strong>, <strong>Nuxt 3</strong>, and <strong>TypeScript</strong>, and I’ve also worked with <strong>React</strong> in cross-functional environments.
+        I'm a <strong>Senior Frontend Engineer and Tech Lead</strong> with over {yearsOfExperience}{' '}
+        years of experience designing and building performant, maintainable web applications. I
+        specialize in modern JavaScript frameworks like <strong>Vue 3</strong>,{' '}
+        <strong>Nuxt 3</strong>, and <strong>TypeScript</strong>, and I’ve also worked with{' '}
+        <strong>React</strong> in cross-functional environments.
       </p>
       <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-        At <strong>Superthread</strong>, I led a team of ten engineers. My work involved shaping architecture, mentoring developers and improving the product with a strong focus on user experience, accessibility and performance. Key projects I led include the migration from Vue 2 to Vue 3 and the introduction of server side rendering to improve both speed and SEO.
+        At <strong>Superthread</strong>, I led a team of ten engineers. My work involved shaping
+        architecture, mentoring developers and improving the product with a strong focus on user
+        experience, accessibility and performance. Key projects I led include the migration from Vue
+        2 to Vue 3 and the introduction of server side rendering to improve both speed and SEO.
       </p>
       <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-        Passionate about developer experience and continuous learning, I have shipped production AI features including an AI Chat system and an Agents V2 interaction layer, and I'm actively shaping how agentic workflows integrate into modern products.
+        Passionate about developer experience and continuous learning, I have shipped production AI
+        features including an AI Chat system and an Agents V2 interaction layer, and I'm actively
+        shaping how agentic workflows integrate into modern products.
       </p>
     </section>
-  );
-};
+  )
+}
 
-export default About;
+export default About

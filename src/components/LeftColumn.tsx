@@ -1,6 +1,6 @@
-import React from 'react';
-import Skills from './Skills';
-import Languages from './Languages';
+import type React from 'react'
+import Languages from './Languages'
+import Skills from './Skills'
 
 const LeftColumn: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ const LeftColumn: React.FC = () => {
       <Skills />
       <Languages />
     </div>
-  );
-};
+  )
+}
 
-export default LeftColumn;
+export default LeftColumn

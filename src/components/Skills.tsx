@@ -1,44 +1,81 @@
-import React, { useState } from 'react';
-import { Code2, Terminal, Globe, PenTool as Tool, ChevronDown } from 'lucide-react';
+import { ChevronDown, Code2, Globe, Terminal, PenTool as Tool } from 'lucide-react'
+import type React from 'react'
+import { useState } from 'react'
 
 interface SkillCategory {
-  title: string;
-  icon: React.ReactNode;
-  skills: string[];
+  title: string
+  icon: React.ReactNode
+  skills: string[]
 }
 
 const Skills: React.FC = () => {
-  const [expandedCategories, setExpandedCategories] = useState<Record<string, boolean>>({});
+  const [expandedCategories, setExpandedCategories] = useState<Record<string, boolean>>({})
 
   const toggleCategory = (title: string) => {
-    setExpandedCategories(prev => ({
+    setExpandedCategories((prev) => ({
       ...prev,
-      [title]: !prev[title]
-    }));
-  };
+      [title]: !prev[title],
+    }))
+  }
 
   const skillCategories: SkillCategory[] = [
     {
       title: 'Languages & Frameworks',
       icon: <Code2 className="w-5 h-5 text-blue-500" />,
-      skills: ['Vue.js (2 & 3)', 'Nuxt 3', 'Node' , 'React', 'TypeScript', 'GoLang', 'JavaScript', 'HTML5', 'CSS3', 'Sass', 'Jest', 'Vitest']
+      skills: [
+        'Vue.js (2 & 3)',
+        'Nuxt 3',
+        'Node',
+        'React',
+        'TypeScript',
+        'GoLang',
+        'JavaScript',
+        'HTML5',
+        'CSS3',
+        'Sass',
+        'Jest',
+        'Vitest',
+      ],
     },
     {
       title: 'Tooling',
       icon: <Tool className="w-5 h-5 text-green-500" />,
-      skills: ['Vite', 'Webpack', 'Lerna', 'Vuex', 'Tiptap', 'Git', 'GitHub Actions', 'Cypress', 'Sentry', 'SonarCloud', 'DebugBear']
+      skills: [
+        'Vite',
+        'Webpack',
+        'Lerna',
+        'Vuex',
+        'Tiptap',
+        'Git',
+        'GitHub Actions',
+        'Cypress',
+        'Sentry',
+        'SonarCloud',
+        'DebugBear',
+      ],
     },
     {
       title: 'Platforms',
       icon: <Globe className="w-5 h-5 text-purple-500" />,
-      skills: ['AWS Amplify', 'Netlify', 'Cloudflare Workers', 'Cloudflare CDN', 'Cloudflare R2']
+      skills: ['AWS Amplify', 'Netlify', 'Cloudflare Workers', 'Cloudflare CDN', 'Cloudflare R2'],
     },
     {
       title: 'Other',
       icon: <Terminal className="w-5 h-5 text-orange-500" />,
-      skills: ['Agile/Scrum', 'Code Reviews', 'Team Mentoring', 'Accessibility', 'SSR', 'CI/CD', 'OAuth', 'SEO', 'i18n', 'State management (Vuex, complex shared state, real-time sync)']
-    }
-  ];
+      skills: [
+        'Agile/Scrum',
+        'Code Reviews',
+        'Team Mentoring',
+        'Accessibility',
+        'SSR',
+        'CI/CD',
+        'OAuth',
+        'SEO',
+        'i18n',
+        'State management (Vuex, complex shared state, real-time sync)',
+      ],
+    },
+  ]
 
   return (
     <section className="mb-8">
@@ -46,12 +83,13 @@ const Skills: React.FC = () => {
 
       <div className="space-y-8">
         {skillCategories.map((category) => {
-          const skillsListText = category.skills.join(', ');
+          const skillsListText = category.skills.join(', ')
 
           return (
             <div key={category.title} className="group">
               <div className="print:hidden">
                 <button
+                  type="button"
                   onClick={() => toggleCategory(category.title)}
                   className="w-full flex items-center justify-between gap-2 mb-3 md:mb-3 md:justify-start"
                 >
@@ -87,11 +125,11 @@ const Skills: React.FC = () => {
                 <div className="text-sm">{skillsListText}</div>
               </div>
             </div>
-          );
+          )
         })}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills
