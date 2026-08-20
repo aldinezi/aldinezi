@@ -19,7 +19,7 @@ With over **10 years of experience**, I specialize in creating fast, scalable, a
 ### 💼 Current Role
 
 **Senior Frontend Software Engineer** @ [Zendev](https://zendev.se) / [ICA Gruppen](https://www.ica.se)
-🔧 React · TypeScript · OAuth2 · Oracle Cloud · Java microservices
+🔧 Vue 3 · TypeScript · OAuth2 · Oracle Cloud · Java microservices
 👥 Master Data Retail Team | Legacy app migrations | Search & filter components
 
 ---
